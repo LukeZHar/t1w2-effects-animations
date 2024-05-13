@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
+    <meta charset=UTF-8></meta>
+    <title>Percentages</title>
+</head>
+<body>
+    <style>
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: salmon;
+        }
+
+        .box:hover {
+            animation-name: colorful-text;
+            animation-duration: 4s; 
+        }
+
+        .cube {
+            width: 100px;
+            height: 100px;
+            background: salmon;
+        }
+
+        .cube:hover {
+            animation-name: colorful-cube;
+            animation-duration: 4s;
+        }
+
+        @keyframes colorful-text {
+            0% {
+                background: red;
+            }
+            25% {
+                background: orange;
+                width: 200px;
+            }
+            50% {
+                background: yellow;
+                width: 500px;
+            }
+            75% {
+                background: green;
+                width: 200px;
+            }
+            100% {
+                background: blue;
+            }
+
+        }
+
+        @keyframes colorful-cube {
+            from {
+                background: green;
+            }
+
+            to {
+                background: orange;
+            }
+        }
+
+    </style>
+
+    <div class="box"></div>
+    <br></br>
+    <div class="cube"></div>
+
+</body>
+</html>
